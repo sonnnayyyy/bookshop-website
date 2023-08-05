@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 .cat_header{
     text-align: center;
     flex-direction: column;
@@ -24,12 +27,13 @@ h1 a{
     text-align: center;
 }
 body{
+    background-color: rgba(227, 252, 244, 0.863);
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #000;
     margin: 0;
 }
 header{
-    background-color: #d3d3d396;
+    background-color: #0c5d69;
 }
 header nav{
     padding: 30px;
@@ -45,7 +49,7 @@ nav a.active{
 }
 header nav a{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 25px;
     padding-left: 20px;
@@ -53,7 +57,7 @@ header nav a{
 }
 footer nav a{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
@@ -67,7 +71,7 @@ section{
     margin-bottom: 30px;
 }
 footer{
-    background-color: #d3d3d396;
+    background-color: #0c5d69;
     min-height: 10px;
     overflow: hidden;
     padding: 10px;
@@ -82,15 +86,24 @@ nav{
     font-size: 20px;
 }
 .book:hover{
-    background-color: cornsilk;
+    background-color: #c9e6eb;
     text-decoration: underline;
 }
-.logo img{
-    margin-top: 12px;
+.logo i{
+    margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 15px;
-    width: 500px;
-    height: auto;
+    width: auto;
+    height: 65px;
+    font-size: 65px;
+    color: #ffffff;
+}
+header a span{
+    display: relative;
+    text-align: center;
+    color: #ffffff;
+    font-size: 65px;
+    margin-left: 20px;
 }
 .sub_cat_title{
     text-align: center;
@@ -143,4 +156,87 @@ form div input[type="reset"]{
     width: 150px;
     height: 50px;
     margin-left: 30px;
+}
+.breadcrumb{
+    list-style: none;
+    padding: 5px 15px;
+    background-color: rgba(180, 235, 217, 0.863);
+    margin-top: 0px;
+}
+.breadcrumb li{
+    display: inline;
+    margin-right: 10px;
+    color: #000;
+    font-size: 20px;
+}
+.breadcrumb li a{
+    color: #000;
+    font-weight: 550;
+}
+.breadcrumb li+li:before {
+    padding: 9px;
+    color: #000;
+    content: ">\00a0";
+    font-weight: 300;
+}
+.breadcrumb li a:hover{
+    text-decoration: underline;
+}
+.image_container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: auto;
+}
+.main_image{
+    width: 20vw;
+    min-width: 200px;
+    height: fit-content;
+}
+.sub_image{
+    display: flex;
+    flex-direction: column;
+}
+.sub_image img{
+    height: 9.5vw;
+    min-height: 93px;
+    margin: 5px;
+    width: 6.5vw;
+}
+.price{
+    display: block;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    padding: 20px; 
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.price div{
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#add {
+    font-size: 20px;
+    background-color: rgb(43, 138, 43);
+    border-radius: 30px;
+    border: 0;
+    padding: 10px;
+    color: white;
+    width: 170px;
+    height: 60px;
+}
+#add:hover{
+    border: 2px solid rgb(43, 138, 43);
+    color: rgb(43, 138, 43);
+    background-color: rgba(227, 252, 244, 0.863);
+}
+.book_desc{
+    margin: 0 30px;
+}
+.book_desc p{
+    text-align: justify;
 }
