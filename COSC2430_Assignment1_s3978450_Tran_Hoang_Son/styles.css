@@ -203,9 +203,10 @@ form div input[type="reset"]{
     justify-content: center;
     padding: 20px;
     width: auto;
+    
 }
 .main_image{
-    width: 20vw;
+    width: 25vw;
     min-width: 200px;
     height: fit-content;
 }
@@ -214,10 +215,10 @@ form div input[type="reset"]{
     flex-direction: column;
 }
 .sub_image img{
-    height: 9.5vw;
+    height: 12vw;
     min-height: 93px;
-    margin: 5px;
-    width: 6.5vw;
+    margin: 4px;
+    max-width: fit-content;
 }
 .price{
     display: block;
@@ -389,5 +390,34 @@ form div input[type="reset"]{
     .form_container{
         
         padding-left: 30px;
+    }
+    .image_container{
+        width: 100%;
+        position: relative;
+        padding: 15px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main_image{
+        width: 60%;
+        margin: auto;
+    }
+    .sub_image{
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+    }
+    .sub_image img{
+        height: 14vw;
+        min-height: 93px;
+        max-width: fit-content;
+        margin: 4px;
+        padding: 5px;
+    }
+    .price{
+        
+    }
+    .price div{
+        
     }
 }
